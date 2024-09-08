@@ -11216,3 +11216,52 @@ section.resume-section .resume-section-content {
     font-size: 0.75rem; /* Further reduce font size */
   }
 }
+
+
+
+
+
+
+.projects-container {
+  max-height: 400px; /* Maximum height of the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 15px; /* Space for scrollbar */
+  border: 1px solid #ddd; /* Optional border for visual clarity */
+  padding: 20px; /* Padding around content */
+  margin-bottom: 20px; /* Spacing below the container */
+  border-radius: 5px; /* Rounded corners */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow for better look */
+  background-color: #fff; /* Background color */
+}
+
+/* Individual project items styling */
+.project-item {
+  margin-bottom: 20px; /* Spacing between project items */
+}
+
+.project-item h5 {
+  font-size: 1.1em; /* Slightly larger font size for project titles */
+  display: flex; /* Flexbox to align items */
+  align-items: center; /* Center align items vertically */
+}
+
+.project-item h5 a img {
+  margin-left: 8px; /* Space between project name and icon */
+}
+
+.project-item ul {
+  margin-top: 10px; /* Space above the list */
+  padding-left: 20px; /* Indentation for list items */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects-container {
+      max-height: 300px; /* Reduce height for smaller screens */
+      padding-right: 10px; /* Less padding for smaller screens */
+  }
+
+  .project-item h5 {
+      font-size: 1em; /* Smaller font size for project titles */
+  }
+}
